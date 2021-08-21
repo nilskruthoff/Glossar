@@ -1,19 +1,29 @@
-#maintext {
-    margin: 25px 0px;
-}
-
 #table {
-    margin: 25px 0px;
+    margin: 25px 0;
 }
 
 #diagrams {
-    margin: 25px 0px;
+    margin: 25px 0;
 }
 
 #metadata {
-    margin: 25px 0px;
+    margin: 25px 0;
 }
 
 .table-30 {
     width: 25%;
+}
+
+.section-seperator {
+    margin-bottom: 40px;
+}
+
+.h4 {
+    margin-bottom: 10px;
+}
+
+.phpcode {
+    border: 1px solid gray;
+    padding: 10px 20px;
+    border-radius: 2px;
 }

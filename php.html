@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>PHP - Hypertext Preprocessor</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="glossar.css">
+        <link rel="stylesheet" type="text/css" href="fachbegriff.css">
+    </head>
+
+    <body>
+        <header class="p-3 bg-dark text-white">
+            <nav class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="index.html" class="nav-link px-2 text-secondary">Log7-Consulting</a></li>
+                        <li><a href="glossar.html" class="nav-link px-2 text-white">Glossar</a></li>
+                        <li><a href="logistik.html" class="nav-link px-2 text-white">Logistik</a></li>
+                        <li><a href="marketing.html" class="nav-link px-2 text-white">Marketing</a></li>
+                        <li><a href="it.html" class="nav-link px-2 text-white">IT</a></li>
+                    </ul>
+
+                    <form class="form-inline my-2 my-lg-0">
+                        <input id="searchText" class="form-control mr-sm-2" type="text" placeholder="Suchen..." aria-label="Search">
+                        <input class="btn btn-primary my-2 my-sm-0" type="button" id="SearchBtn" value="Suchen" onclick="search()" />
+                        <script>
+                            function search()
+                            {
+                                let userInput = document.getElementById('searchText').value;
+                                let context = document.querySelectorAll("Body");
+                                let instance = new Mark(context);
+                                instance.unmark(userInput);
+                                instance.mark(userInput);
+                            }
+                        </script>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <div class="jumbotron">
+            <section class="container">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Startseite</a></li>
+                        <li class="breadcrumb-item"><a href="glossar.html">Glossar</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">PHP - Hypertext Preprocessor</li>
+                    </ol>
+                </nav>
+                <h1 class="display-1 text-nowrap" id="title">PHP - Hypertext Preprocessor</h1>
+                <p class="lead mt-4"><u>PHP</u><small> (rekursives Akronym für <code>PHP: Hypertext Preprocessor</code>)</small> ist eine weit verbreitete und für den
+                    allgemeinen Gebrauch bestimmte Open Source-<a href="#">Skriptsprache</a>,
+                    welche speziell für die Webprogrammierung geeignet ist und in HTML eingebettet werden kann.</p>
+            </section>
+        </div>
+
+        <main class="container">
+            <section class="section-seperator">
+                <h4 class="h4">Ein Code-Beispiel</h4>
+                <div class="phpcode">
+                    <code><span style="color: #000000">
+                        &lt;!DOCTYPE&nbsp;html&gt;<br>
+                        &lt;html&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Beispiel&lt;/title&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000BB">&lt;?php<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">echo&nbsp;</span>
+                                    <span style="color: #DD0000">"Hallo,&nbsp;ich&nbsp;bin&nbsp;ein&nbsp;PHP-Skript!"</span>
+                                <span style="color: #007700">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span style="color: #0000BB">?&gt;<br></span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+                        &lt;/html&gt;</span>
+                    </code>
+                </div>
+            </section>
+
+            <section class="section-seperator">
+                <h4 class="h4">Beschreibung und Definition</h4>
+                <p class="text">Anstatt ein Programm mit vielen Anweisungen zur Ausgabe von HTML zu schreiben,
+                    schreibt man etwas HTML und bettet einige Anweisungen ein, die irgendetwas tun
+                    (wie hier "Hallo, ich bin ein PHP-Skript!" auszugeben).
+                    Der PHP-Code steht zwischen speziellen
+                    <a href="https://www.php.net/manual/de/language.basic-syntax.phpmode.php">
+                        Anfangs- und Abschluss-Verarbeitungsinstruktionen &lt?php und ?&gt
+                    </a>,
+                    mit denen man in den "PHP-Modus" und zurück wechseln kann.</p>
+                <p class="text">PHP unterscheidet sich von clientseitigen Sprachen wie Javascript dadurch, dass der Code auf dem Server ausgeführt
+                    wird und dort HTML-Ausgaben generiert, die an den Client gesendet werden. Der Client erhält also nur das Ergebnis der
+                    Skriptausführung, ohne dass es möglich ist herauszufinden, wie der eigentliche Code aussieht.
+                    Sie können Ihren Webserver auch anweisen, alle Ihre HTML-Dateien mit PHP zu parsen,
+                    denn dann gibt es wirklich nichts, das dem Benutzer sagt, was Sie in petto haben.</p>
+                <p class="text">Das Beste an der Verwendung von PHP ist, dass es für Neueinsteiger extrem einfach ist, aber auch einen riesigen
+                    Funktionsumfang für den professionellen Programmierer bietet. Scheuen Sie sich nicht, die lange Liste der
+                    PHP-Funktionen zu lesen. Sie können einsteigen, und binnen weniger Stunden bereits mit dem Schreiben von einfachen
+                    Skripten beginnen.</p>
+                <p class="text">Auch wenn die Entwicklung von PHP auf serverseitige Programmierung fokussiert ist, können Sie mit
+                    PHP weitaus mehr anstellen. Lesen Sie mehr im Abschnitt <a href="https://www.php.net/manual/de/tutorial.php">Was kann PHP?</a> oder benutzen Sie direkt das
+                    <a href="https://www.php.net/manual/de/intro-whatcando.php">Einführungstutorial</a>,
+                    wenn Sie nur an Webprogrammierung interessiert sind.</p>
+            </section>
+
+            <section id="table">
+                <h4 class="h4">Tabellen</h4>
+                <table class="table">
+                    <thead class="table-primary">
+                        <tr>Lorem</tr>
+                        <tr>Ipsum</tr>
+                        <tr>Dolor</tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>sit amet</td>
+                        <td>consetetur sadipscing</td>
+                        <td>sed diam nonumy</td>
+                    </tr>
+                    <tr>
+                        <td>consetetur sadipscing</td>
+                        <td>sed diam nonumy</td>
+                        <td>labore et dolore magna</td>
+                    </tr>
+                    <tr>
+                        <td>consetetur sadipscing</td>
+                        <td>sed diam nonumy</td>
+                        <td>labore et dolore magna</td>
+                    </tr>
+                    <tr>
+                        <td>consetetur sadipscing</td>
+                        <td>labore et dolore magna</td>
+                        <td>sed diam nonumy</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="diagrams">
+                <h4 class="h4">Diagramme</h4>
+            </section>
+
+            <article id="quellen">
+                <h4 class="h4">Quellen</h4>
+                <ul class="list-group">
+                    <li class="list-group-item"><a class="link-primary" href="https://de.wikipedia.org/wiki/Distributionslogistik">Wikipedia</a></li>
+                    <li class="list-group-item"><a class="link-primary" href="https://de.wikipedia.org/wiki/Distributionslogistik">Wikipedia</a></li>
+                    <li class="list-group-item"><a class="link-primary" href="https://de.wikipedia.org/wiki/Distributionslogistik">Wikipedia</a></li>
+                    <li class="list-group-item"><a class="link-primary" href="https://de.wikipedia.org/wiki/Distributionslogistik">Wikipedia</a></li>
+                </ul>
+            </article>
+
+            <section id="metadata">
+                <h4 class="h4">Informationen</h4>
+                <table class="table table-borderless table-30">
+                    <tbody>
+                    <tr>
+                        <td>Autor</td>
+                        <td>Nils Kruthoff</td>
+                    </tr>
+                    <tr>
+                        <td>Erstellt</td>
+                        <td>02.05.2021</td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap">Zuletzt Beabeitet</td>
+                        <td class="text-nowrap"><strong id="datetime">14.08.2021 18:00</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Tags</td>
+                        <td><a href="logistik.html">Logistik</a>, <a href="it.html">IT</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="save">
+                <button onclick="saveDate()" class="btn btn-primary">Speichern</button>
+                <button onclick="renderLocalStoredDateTime('datetime', getLocalStoredDateTime('dateTime'))" class="btn btn-primary">DATE</button>
+            </section>
+
+            <footer class="row">
+                <p class="col-sm-4">Grundlagen der Web-Programmierung</p>
+                <p class="col-sm-4">Glossar für die Log7-Consult GmbH</p>
+                <p class="col-sm-4">©Nils Kruthoff</p>
+            </footer>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous"></script>
+        <script src="datetime.js"></script>
+        <script src="mark.js"></script>
+    </body>
+</html>

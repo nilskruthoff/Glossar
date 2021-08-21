@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Glossar</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="glossar.css">
+        <link rel="stylesheet" type="text/css" href="fachbegriff.css">
+    </head>
+
+    <body>
+        <header class="p-3 bg-dark text-white">
+            <nav class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="index.html" class="nav-link px-2 text-secondary">Log7-Consulting</a></li>
+                        <li><a href="glossar.html" class="nav-link px-2 text-white">Glossar</a></li>
+                        <li><a href="logistik.html" class="nav-link px-2 text-white">Logistik</a></li>
+                        <li><a href="marketing.html" class="nav-link px-2 text-white">Marketing</a></li>
+                        <li><a href="it.html" class="nav-link px-2 text-white">IT</a></li>
+                    </ul>
+
+                    <form class="form-inline my-2 my-lg-0">
+                        <input id="searchText" class="form-control mr-sm-2" type="text" placeholder="Suchen..." aria-label="Search">
+                        <input class="btn btn-primary my-2 my-sm-0" type="button" id="SearchBtn" value="Suchen" onclick="search()" />
+                        <script>
+                            function search()
+                            {
+                                let userInput = document.getElementById('searchText').value;
+                                let context = document.querySelectorAll("Body");
+                                let instance = new Mark(context);
+                                instance.unmark(userInput);
+                                instance.mark(userInput);
+                            }
+                        </script>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <div class="jumbotron">
+            <section class="container">
+                <h1 class="display-1">Logistik</h1>
+            </section>
+        </div>
+
+        <main class="container">
+            <section class="list-group">
+                <a href="#" class="list-group-item list-group-item-action borderless">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small class="text-muted">3 days ago</small>
+                    </div>
+                    <p class="mb-1">Some placeholder content in a paragraph.</p>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action borderless">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small class="text-muted">3 days ago</small>
+                    </div>
+                    <p class="mb-1">Some placeholder content in a paragraph.</p>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action borderless">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small class="text-muted">3 days ago</small>
+                    </div>
+                    <p class="mb-1">Some placeholder content in a paragraph.</p>
+                </a>
+            </section>
+
+            <footer class="row">
+                <p class="col-sm-4">Grundlagen der Web-Programmierung</p>
+                <p class="col-sm-4">Glossar für die Log7-Consult GmbH</p>
+                <p class="col-sm-4">©Nils Kruthoff</p>
+            </footer>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous"></script>
+        <script src="datetime.js"></script>
+        <script src="mark.js"></script>
+    </body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Glossar</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="glossar.css">
+    </head>
+
+    <body id="body">
+        <header class="p-3 bg-dark text-white">
+            <nav class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="index.html" class="nav-link px-2 text-secondary">Log7-Consulting</a></li>
+                        <li><a href="glossar.html" class="nav-link px-2 text-white">Glossar</a></li>
+                        <li><a href="logistik.html" class="nav-link px-2 text-white">Logistik</a></li>
+                        <li><a href="marketing.html" class="nav-link px-2 text-white">Marketing</a></li>
+                        <li><a href="it.html" class="nav-link px-2 text-white">IT</a></li>
+                    </ul>
+
+                    <form class="form-inline my-2 my-lg-0">
+                        <input id="searchText" class="form-control mr-sm-2" type="text" placeholder="Suchen..." aria-label="Search">
+                        <input class="btn btn-primary my-2 my-sm-0" type="button" id="SearchBtn" value="Suchen" onclick="search()" />
+                        <script>
+                            function search()
+                            {
+                                let userInput = document.getElementById('searchText').value;
+                                let context = document.querySelectorAll("Body");
+                                let instance = new Mark(context);
+                                instance.unmark(userInput);
+                                instance.mark(userInput);
+                            }
+                        </script>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <div class="jumbotron">
+            <section class="container">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Startseite</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Glossar</li>
+                    </ol>
+                </nav>
+
+                <h1 class="display-1" id="headline">Glossar</h1>
+                <div class="display-5">
+                    <a href="#A">A</a>
+                    <a href="#B">B</a>
+                    <a href="#C">C</a>
+                    <a href="#D">D</a>
+                    <a href="#E">E</a>
+                    <a href="#F">F</a>
+                    <a href="#G">G</a>
+                    <a href="#H">H</a>
+                    <a href="#I">I</a>
+                    <a href="#J">J</a>
+                    <a href="#K">K</a>
+                    <a href="#L">L</a>
+                    <a href="#M">M</a>
+                    <a href="#N">N</a>
+                    <a href="#O">O</a>
+                    <a href="#P">P</a>
+                    <a href="#Q">Q</a>
+                    <a href="#R">R</a>
+                    <a href="#S">S</a>
+                    <a href="#T">T</a>
+                    <a href="#U">U</a>
+                    <a href="#V">V</a>
+                    <a href="#W">W</a>
+                    <a href="#X">X</a>
+                    <a href="#Y">Y</a>
+                    <a href="#Z">Z</a>
+                </div>
+            </section>
+        </div>
+
+        <main class="container">
+            <section class="row section-margin">
+                <article id="A" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>A</p>
+                    </header>
+                    <a href="#" class="list-group-item list-group-item-action borderless">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1 font-smaller" id="aei">AEI – Automatic Equipment Identification</h5>
+                            <small class="text-muted">Nils Kruthoff</small>
+                        </div>
+                        <p class="mb-1 font-small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    </a>
+                    <hr>
+                    <a href="#" class="list-group-item list-group-item-action borderless">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1 font-smaller">Application Service Providing</h5>
+                            <small class="text-muted">Amanda Rose</small>
+                        </div>
+                        <p class="mb-1 font-small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    </a>
+                    <hr>
+                    <a href="#" class="list-group-item list-group-item-action borderless">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1 font-smaller">ASCII</h5>
+                            <small class="text-muted">Thomas Müller</small>
+                        </div>
+                        <p class="mb-1 font-small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    </a>
+                </article>
+
+                <article id="B" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>B</p>
+                    </header>
+                    <a href="#" class="list-group-item list-group-item-action borderless">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1 font-smaller">Back-end-Systeme</h5>
+                            <small class="text-muted">Thomas Müller</small>
+                        </div>
+                        <p class="mb-1 font-small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    </a>
+                    <hr>
+                    <a href="#" class="list-group-item list-group-item-action borderless">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1 font-smaller">Bi-Directional</h5>
+                            <small class="text-muted">Nils Kruthoff</small>
+                        </div>
+                        <p class="mb-1 font-small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    </a>
+                    <hr>
+                    <a href="#" class="list-group-item list-group-item-action borderless">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1 font-smaller">Barcode</h5>
+                            <small class="text-muted">Leonie Walters</small>
+                        </div>
+                        <p class="mb-1 font-small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    </a>
+                    <hr>
+                    <a href="#" class="list-group-item list-group-item-action borderless">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1 font-smaller">B2B – Business-to-Business</h5>
+                            <small class="text-muted">Leonie Walters</small>
+                        </div>
+                        <p class="mb-1 font-small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    </a>
+                </article>
+            </section>
+
+            <section class="row section-margin">
+                <article id="C" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>C</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Client-Server-Architektur</li>
+                    </ul>
+                </article>
+
+                <article id="D" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>D</p>
+                    </header>
+                    <a href="distributionslogistik.html" class="list-group-item list-group-item-action borderless">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1 font-smaller">Distributionslogistik</h5>
+                            <small class="text-muted">Nils Kruthoff</small>
+                        </div>
+                        <p class="mb-1 font-small">Die Distributionslogistik, auch Absatzlogistik genannt, beinhaltet die Planung, Überwachung und alle Prozesse,
+                            die sich auf den Waren- und Informationsfluss beziehen, zwischen dem Produktionsunternehmen und den Kunden.
+                            Dabei erfüllt die Distributionslogistik alle Prozesse und Aufgaben zur Vorbereitung und schließlich zur Durchführung
+                            der Warenverteilung.</p>
+                    </a>
+                </article>
+            </section>
+
+            <section class="row section-margin">
+                <article id="E" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>E</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </article>
+
+                <article id="F" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>F</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="row section-margin">
+                <article id="G" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>G</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </article>
+
+                <article id="H" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>H</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="row section-margin">
+                <article id="I" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>I</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </article>
+
+                <article id="J" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>J</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="row section-margin">
+                <article id="K" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>K</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </article>
+
+                <article id="L" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>L</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Lagerleistung</li>
+                        <li class="list-group-item">Lagerkonfiguration</li>
+                        <li class="list-group-item">Lagerverwaltungssystem</li>
+                        <li class="list-group-item">Last in First out</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="row section-margin">
+                <article id="M" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>M</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </article>
+
+                <article id="N" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>N</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="row section-margin">
+                <article id="O" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>O</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </article>
+
+                <article id="P" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>P</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="row section-margin">
+                <article id="Q" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>Q</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </article>
+
+                <article id="R" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>R</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="row section-margin">
+                <article id="S" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>S</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </article>
+
+                <article id="T" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>T</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="row section-margin">
+                <article id="U" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>U</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </article>
+
+                <article id="V" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>V</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="row section-margin">
+                <article id="W" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>W</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </article>
+
+                <article id="X" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>X</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="row section-margin">
+                <article id="Y" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>Y</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </article>
+
+                <article id="Z" class="col-sm-6 card">
+                    <header class="card-title display-1">
+                        <p>Z</p>
+                    </header>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </article>
+            </section>
+
+            <footer class="row">
+                <p class="col-sm-4">Grundlagen der Web-Programmierung</p>
+                <p class="col-sm-4">Glossar für die Log7-Consult GmbH</p>
+                <p class="col-sm-4">©Nils Kruthoff</p>
+            </footer>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous"></script>
+        <script src="mark.js"></script>
+    </body>
+</html>

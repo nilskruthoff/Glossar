@@ -5,8 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="glossar.css">
-        <link rel="stylesheet" type="text/css" href="fachbegriff.css">
+        <link rel="stylesheet" type="text/css" href="php.css">
     </head>
 
     <body>
@@ -51,7 +50,7 @@
                 </nav>
                 <h1 class="display-1 text-nowrap" id="title">PHP - Hypertext Preprocessor</h1>
                 <p class="lead mt-4"><u>PHP</u><small> (rekursives Akronym für <code>PHP: Hypertext Preprocessor</code>)</small> ist eine weit verbreitete und für den
-                    allgemeinen Gebrauch bestimmte Open Source-<a href="#">Skriptsprache</a>,
+                    allgemeinen Gebrauch bestimmte Open Source-<a href="programmiersprachen.html">Skriptsprache</a>,
                     welche speziell für die Webprogrammierung geeignet ist und in HTML eingebettet werden kann.</p>
             </section>
         </div>
@@ -78,6 +77,8 @@
                 </div>
             </section>
 
+            <hr>
+
             <section class="section-seperator">
                 <h4 class="h4">Beschreibung und Definition</h4>
                 <p class="text">Anstatt ein Programm mit vielen Anweisungen zur Ausgabe von HTML zu schreiben,
@@ -103,57 +104,66 @@
                     wenn Sie nur an Webprogrammierung interessiert sind.</p>
             </section>
 
-            <section id="table">
-                <h4 class="h4">Tabellen</h4>
-                <table class="table">
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4">Verbreitung der PHP Versionen</h4>
+                <table class="table table-striped text">
                     <thead class="table-primary">
-                        <tr>Lorem</tr>
-                        <tr>Ipsum</tr>
-                        <tr>Dolor</tr>
+                        <tr>
+                            <th>PHP Version</th>
+                            <th>Verbreitung</th>
+                        </tr>
                     </thead>
 
                     <tbody>
-                    <tr>
-                        <td>sit amet</td>
-                        <td>consetetur sadipscing</td>
-                        <td>sed diam nonumy</td>
-                    </tr>
-                    <tr>
-                        <td>consetetur sadipscing</td>
-                        <td>sed diam nonumy</td>
-                        <td>labore et dolore magna</td>
-                    </tr>
-                    <tr>
-                        <td>consetetur sadipscing</td>
-                        <td>sed diam nonumy</td>
-                        <td>labore et dolore magna</td>
-                    </tr>
-                    <tr>
-                        <td>consetetur sadipscing</td>
-                        <td>labore et dolore magna</td>
-                        <td>sed diam nonumy</td>
-                    </tr>
+                        <tr>
+                            <td>Version 7</td>
+                            <td>67.4%</td>
+                        </tr>
+                        <tr>
+                            <td>Version 5</td>
+                            <td>31.5%</td>
+                        </tr>
+                        <tr>
+                            <td>Version 8</td>
+                            <td>0.8%</td>
+                        </tr>
+                        <tr>
+                            <td>Version 4</td>
+                            <td>0.2%</td>
+                        </tr>
+                        <tr>
+                            <td>Version 3</td>
+                            <td>weniger als 0.1%</td>
+                        </tr>
                     </tbody>
                 </table>
             </section>
 
-            <section id="diagrams">
-                <h4 class="h4">Diagramme</h4>
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4">Quellen</h4>
+                <ul class="list-group text">
+                    <li class="list-group-item">
+                        <strong>o. A (2021). </strong><i>Was ist PHP?</i>, (URL:
+                        <a class="link-primary" href="https://www.php.net/manual/de/intro-whatis.php">https://www.php.net/manual/de/intro-whatis.php</a>
+                        [letzter Zugriff: 22.08.2021]).
+                    </li>
+                    <li class="list-group-item">
+                        <strong>o. A (2021). </strong><i>Usage statistics of PHP for websites</i>, (URL:
+                        <a class="link-primary" href="https://w3techs.com/technologies/details/pl-php">https://w3techs.com/technologies/details/pl-php</a>
+                        [letzter Zugriff: 22.08.2021]).
+                    </li>
+                </ul>
             </section>
 
-            <article id="quellen">
-                <h4 class="h4">Quellen</h4>
-                <ul class="list-group">
-                    <li class="list-group-item"><a class="link-primary" href="https://de.wikipedia.org/wiki/Distributionslogistik">Wikipedia</a></li>
-                    <li class="list-group-item"><a class="link-primary" href="https://de.wikipedia.org/wiki/Distributionslogistik">Wikipedia</a></li>
-                    <li class="list-group-item"><a class="link-primary" href="https://de.wikipedia.org/wiki/Distributionslogistik">Wikipedia</a></li>
-                    <li class="list-group-item"><a class="link-primary" href="https://de.wikipedia.org/wiki/Distributionslogistik">Wikipedia</a></li>
-                </ul>
-            </article>
+            <hr>
 
-            <section id="metadata">
+            <section class="section-seperator">
                 <h4 class="h4">Informationen</h4>
-                <table class="table table-borderless table-30">
+                <table class="table table-borderless table-30 text">
                     <tbody>
                     <tr>
                         <td>Autor</td>
@@ -173,11 +183,7 @@
                     </tr>
                     </tbody>
                 </table>
-            </section>
-
-            <section id="save">
                 <button onclick="saveDate()" class="btn btn-primary">Speichern</button>
-                <button onclick="renderLocalStoredDateTime('datetime', getLocalStoredDateTime('dateTime'))" class="btn btn-primary">DATE</button>
             </section>
 
             <footer class="row">

@@ -15,7 +15,7 @@
 }
 
 .section-seperator {
-    margin-bottom: 40px;
+    margin: 100px;
 }
 
 .h4 {
@@ -26,4 +26,8 @@
     border: 1px solid gray;
     padding: 10px 20px;
     border-radius: 2px;
+}
+
+.text {
+    font-family: Algerian, serif;
 }

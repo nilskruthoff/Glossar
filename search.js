@@ -1,6 +1,5 @@
 import "mark.js"
 
-
 function search() {
     let userInput = document.getElementById('searchText').value;
     let context = document.querySelectorAll("body");

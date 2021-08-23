@@ -5,8 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="glossar.css">
-        <link rel="stylesheet" type="text/css" href="fachbegriff.css">
+        <link rel="stylesheet" type="text/css" href="topbutton.css">
     </head>
 
     <body>
@@ -46,30 +45,62 @@
             </section>
         </div>
 
+        <button onclick="toTop()" id="topButton" title="Zum Seitenanfang">^</button>
+
         <main class="container">
             <section class="list-group">
-                <a href="#" class="list-group-item list-group-item-action borderless">
+                <a href="cms.html" class="list-group-item list-group-item-action borderless">
                     <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">List group item heading</h5>
-                        <small class="text-muted">3 days ago</small>
+                        <h5 class="mb-1 font-smaller">CMS - Content Management System</h5>
+                        <small class="text-muted text-nowrap">Nils Kruthoff</small>
                     </div>
-                    <p class="mb-1">Some placeholder content in a paragraph.</p>
+
+                    <p class="mb-1 font-small">Ein Content Management System (kurz CMS) ist eine Software, die zur Erstellung und Verwaltung von
+                        Inhalten – in Text-, Bild-, Video- oder sonstiger Form – verwendet wird. CMS werden vor allem zum Betreiben von Websites, aber auch
+                        für „Offline-Plattformen“ (in Intranetzwerken) eingesetzt. Weit verbreitet sind vor allem Open-Source-Systeme, die sowohl
+                        professionelle als auch private Anwender nutzen.</p>
                 </a>
 
-                <a href="#" class="list-group-item list-group-item-action borderless">
+                <a href="compiler.html" class="list-group-item list-group-item-action borderless">
                     <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">List group item heading</h5>
-                        <small class="text-muted">3 days ago</small>
+                        <h5 class="mb-1 font-smaller">Compiler</h5>
+                        <small class="text-muted">Nils Kruthoff</small>
                     </div>
-                    <p class="mb-1">Some placeholder content in a paragraph.</p>
+
+                    <p class="mb-1 font-small">Ein Zielprogramm eines Computers besteht nur aus zwei unterschiedlichen Zeichen – der 0 und der 1 – deshalb nennt
+                        man es auch Binärprogramm. Ein Compiler ist ein Programm, das den in einer höheren Programmiersprache geschriebenen Quellcode
+                        in die maschinenlesbare, binäre Sprache übersetzt. Das Ergebnis ist „ausführbarer Code“, der auch als oder Zielsprache
+                        bezeichnet wird. In manchen Fällen erfolgt die Übersetzung auch per Zwischenschritt mit einer Assemblersprache, so dass
+                        anschließend ein Assembler zur Erzeugung des Maschinencodes benötigt wird.</p>
                 </a>
 
-                <a href="#" class="list-group-item list-group-item-action borderless">
+                <a href="ide.html" class="list-group-item list-group-item-action borderless">
                     <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">List group item heading</h5>
-                        <small class="text-muted">3 days ago</small>
+                        <h5 class="mb-1 font-smaller">IDE - Integrierte Entwicklungsumgebung</h5>
+                        <small class="text-muted">Nils Kruthoff</small>
                     </div>
-                    <p class="mb-1">Some placeholder content in a paragraph.</p>
+                    <p class="mb-1 font-small">Eine integrierte Entwicklungsumgebung oder IDE stellt Programmierern eine Sammlung der wichtigsten
+                        Werkzeuge zur Softwareentwicklung unter einer Oberfläche zur Verfügung. Die Arbeit für die Erstellung von Programmen wird
+                        dadurch vereinfacht.</p>
+                </a>
+
+                <a href="php.html" class="list-group-item list-group-item-action borderless">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1 font-smaller">PHP - Hypertext Preprocessor</h5>
+                        <small class="text-muted">Nils Kruthoff</small>
+                    </div>
+                    <p class="mb-1 font-small">PHP (rekursives Akronym für PHP: Hypertext Preprocessor) ist eine weit verbreitete
+                        und für den allgemeinen Gebrauch bestimmte Open Source-Skriptsprache, welche speziell für die
+                        Webprogrammierung geeignet ist und in HTML eingebettet werden kann.</p>
+                </a>
+
+                <a href="programmiersprachen.html" class="list-group-item list-group-item-action borderless">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1 font-smaller">Programmiersprachen</h5>
+                        <small class="text-muted">Nils Kruthoff</small>
+                    </div>
+                    <p class="mb-1 font-small">Programmiersprachen sind formale Sprachen, mit denen sich Rechenvorschriften formulieren lassen.
+                        Diese Vorschriften können dann von einem Computer ausgeführt werden.</p>
                 </a>
             </section>
 
@@ -91,5 +122,6 @@
                 crossorigin="anonymous"></script>
         <script src="datetime.js"></script>
         <script src="mark.js"></script>
+        <script src="top.js"></script>
     </body>
 </html>

@@ -1,8 +1,10 @@
-window.onload = function () {
+window.onload = function ()
+{
     renderLocalStoredDateTime('datetime', getLocalStoredDateTime('dateTime'));
 }
 
-function saveDate() {
+function saveDate()
+{
     let now = new Date();
     let currentDate = now.getDate() + "." + (now.getMonth() + 1) + "." + now.getFullYear();
     let currentTime = now.getHours() + ":" + minuteCheck(now.getMinutes());
@@ -11,21 +13,25 @@ function saveDate() {
     setLocalStoredDateTime("dateTime", dateTime);
 }
 
-function minuteCheck(minute) {
+function minuteCheck(minute)
+{
     if (minute < 10) {
         minute = "0" + minute;
     }
     return minute;
 }
 
-function setLocalStoredDateTime(keyName, dateTime) {
+function setLocalStoredDateTime(keyName, dateTime)
+{
     localStorage.setItem(keyName,dateTime);
 }
 
-function getLocalStoredDateTime(keyName) {
+function getLocalStoredDateTime(keyName)
+{
     return localStorage.getItem(keyName);
 }
 
-function renderLocalStoredDateTime(id, dateTime) {
+function renderLocalStoredDateTime(id, dateTime)
+{
     document.getElementById(id).innerHTML = dateTime;
 }

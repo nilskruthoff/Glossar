@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>CMS - Content Management System</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="glossar.css">
+        <link rel="stylesheet" type="text/css" href="programmiersprache.css">
+    </head>
+
+    <body>
+        <header class="p-3 bg-dark text-white">
+            <nav class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="index.html" class="nav-link px-2 text-primary">Log7-Consulting</a></li>
+                        <li><a href="glossar.html" class="nav-link px-2 text-white">Glossar</a></li>
+                        <li><a href="logistik.html" class="nav-link px-2 text-white">Logistik</a></li>
+                        <li><a href="marketing.html" class="nav-link px-2 text-white">Marketing</a></li>
+                        <li><a href="it.html" class="nav-link px-2 text-white">IT</a></li>
+                    </ul>
+
+                    <form class="form-inline my-2 my-lg-0">
+                        <input id="searchText" class="form-control mr-sm-2" type="text" placeholder="Suchen..." aria-label="Search">
+                        <input class="btn btn-primary my-2 my-sm-0" type="button" id="SearchBtn" value="Suchen" onclick="search()" />
+                        <script>
+                            function search()
+                            {
+                                let userInput = document.getElementById('searchText').value;
+                                let context = document.querySelectorAll("Body");
+                                let instance = new Mark(context);
+                                instance.unmark(userInput);
+                                instance.mark(userInput);
+                            }
+                        </script>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <div class="jumbotron">
+            <section class="container">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Startseite</a></li>
+                        <li class="breadcrumb-item"><a href="glossar.html">Glossar</a></li>
+                        <li class="breadcrumb-item active text" aria-current="page">CMS - Content Management System</li>
+                    </ol>
+                </nav>
+                <h1 class="display-3 text-nowrap" id="title">CMS - Content Management System</h1>
+                <p class="lead mt-4">Ein Content Management System (kurz CMS) ist eine Software, die zur Erstellung und Verwaltung von
+                    Inhalten – in Text-, Bild-, Video- oder sonstiger Form – verwendet wird. CMS werden vor allem zum Betreiben von Websites, aber auch
+                    für „Offline-Plattformen“ (in Intranetzwerken) eingesetzt. Weit verbreitet sind vor allem Open-Source-Systeme, die sowohl
+                    professionelle als auch private Anwender nutzen.</p>
+            </section>
+        </div>
+
+        <main class="container">
+            <section class="section-seperator">
+                <img src="img/cms.png" alt="CMS Prinzip" width="1080px">
+                <p class="text mt-4">Um die Verwaltung von Inhalten zu vereinfachen, greifen Anwender häufig auf Content Management Systeme zurück. Verlage oder Redaktionen
+                    verwenden gelegentlich Systeme, die nicht über das Internet bereitgestellt, sondern über ein eigenes internes Netzwerk betrieben werden.
+                    Meist bezieht sich der Begriff CMS jedoch auf internetbasierte Software mit Datenbankanbindung zum Betreiben einer Website. Die Systeme
+                    ermöglichen das Erstellen, Bearbeiten und Veröffentlichen von Inhalten wie Texten, Bildern, Videos, Formularen bis hin zu ganzen Webseiten.</p>
+                <small>Bildquelle: https://iexperto.io/wp-content/uploads/2020/08/Content-management-systems-CMS.jpg</small>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4">Vorteile eines CMS</h4>
+                <p class="text">Insbesondere Betreiber kleinerer Websites mit geringerem Angebot sollten sich gut überlegen, ob sie den Aufwand eines
+                    Content Management Systems in Kauf nehmen. Für Websites, die viele Inhalte bieten, kann sich die Einführung eines CMS allerdings lohnen.
+                    Einige der wichtigsten Systeme sind Open Source und somit kostenlos. Sie können die Produktivität eines Unternehmens steigern, da sich
+                    Inhalte schnell und flexibel verwalten lassen. Die Nutzer benötigen keine oder nur geringe Programmierkenntnisse und müssen nicht in den
+                    Code einer Website eingreifen. Stattdessen können sie bei Bedarf häufig auf die Erfahrung einer großen Community zurückgreifen.
+                    Insbesondere (Sicherheits-)Updates liefern viele Entwickler-Communities zuverlässig nach und ersparen Anwendern so einen Teil der
+                    Entwicklungsarbeit. Zudem sind die größten CMS nahezu beliebig durch (teils kostenpflichtige) Module oder Komponenten erweiterbar,
+                    so dass sich der Funktionsumfang schnell und einfach vergrößern lässt.</p>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4">Funktionsweise von Content Management Systemen</h4>
+                <p class="text">Content Management Systeme lassen sich entweder lokal auf einem eigenen Server (im Unternehmen) installieren oder laufen auf dem
+                    Server eines Anbieters, zu dem der Anwender Zugang erhält, wie etwa die Online-Version von WordPress. Die bekanntesten CMS sind in
+                    <a href="php.html">PHP</a>, Perl oder Python <a href="programmiersprachen.html">programmiert</a> und unterstützen das weit
+                    verbreitete <strong>MySQL-Datenbanksystem</strong>.</p>
+                <p class="text">Viele Systeme sind ähnlich aufgebaut und unterscheiden sich in Details: So lassen sich meist einzelne <strong>Content-Bausteine</strong>
+                    <u>(Texte, Bilder etc.)</u> definieren, bearbeiten und vor einem ausgesuchten Hintergrund flexibel anordnen. Oftmals können diese Bausteine per HTML–
+                    oder <strong>WYSIWYG-Editor</strong> verändert und so Webseiten nach Belieben gestaltet werden. Fast immer kann der Nutzer über die Software verschiedene
+                    <strong>Zugriffs- und Benutzerrechte</strong> definieren und so den Zugang zu Optionen und Bereichen regulieren. So bekommen zum Beispiel „Administratoren“
+                    volle Zugriffs- und Bearbeitungsrechte für sämtliche Inhalte und Bereiche des Systems, während Gästen lediglich die Ansicht der Inhalte gewährt
+                    wird. Außerdem sind viele CMS durch <strong>Module, Add-ons und Komponenten</strong> erweiterbar.</p>
+                <small>https://www.textbroker.de/content-management-system</small>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4">Quellen</h4>
+                <ul class="list-group text">
+                    <li class="list-group-item">
+                        <strong>o. A (o. J). </strong><i>Content Management System: Kurzerklärung</i>, (URL:
+                        <a class="link-primary" href="https://www.textbroker.de/content-management-system">
+                            https://www.textbroker.de/content-management-system</a>
+                        [letzter Zugriff: 17.08.2021]).
+                    </li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4">Informationen</h4>
+                <table class="table table-borderless table-30">
+                    <tbody>
+                    <tr>
+                        <td>Autor</td>
+                        <td>Nils Kruthoff</td>
+                    </tr>
+                    <tr>
+                        <td>Erstellt</td>
+                        <td>02.05.2021</td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap">Zuletzt Beabeitet</td>
+                        <td class="text-nowrap"><strong id="datetime">14.08.2021 18:00</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Tags</td>
+                        <td><a href="it.html">IT</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <button onclick="saveDate()" class="btn btn-primary">Speichern</button>
+            </section>
+
+            <footer class="row">
+                <p class="col-sm-4">Grundlagen der Web-Programmierung</p>
+                <p class="col-sm-4">Glossar für die Log7-Consult GmbH</p>
+                <p class="col-sm-4">©Nils Kruthoff</p>
+            </footer>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous"></script>
+        <script src="datetime.js"></script>
+        <script src="mark.js"></script>
+    </body>
+</html>

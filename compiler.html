@@ -15,7 +15,7 @@
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 
                     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                        <li><a href="index.html" class="nav-link px-2 text-secondary">Log7-Consulting</a></li>
+                        <li><a href="index.html" class="nav-link px-2 text-primary">Log7-Consulting</a></li>
                         <li><a href="glossar.html" class="nav-link px-2 text-white">Glossar</a></li>
                         <li><a href="logistik.html" class="nav-link px-2 text-white">Logistik</a></li>
                         <li><a href="marketing.html" class="nav-link px-2 text-white">Marketing</a></li>
@@ -25,15 +25,15 @@
                     <form class="form-inline my-2 my-lg-0">
                         <input id="searchText" class="form-control mr-sm-2" type="text" placeholder="Suchen..." aria-label="Search">
                         <input class="btn btn-primary my-2 my-sm-0" type="button" id="SearchBtn" value="Suchen" onclick="search()" />
-                        function search()
-                        {
-                        let userInput = document.getElementById('searchText').value;
-                        let context = document.querySelectorAll("Body");
-                        let instance = new Mark(context);
-                        instance.unmark(userInput);
-                        instance.mark(userInput);
-                        }
                         <script>
+                            function search()
+                            {
+                                let userInput = document.getElementById('searchText').value;
+                                let context = document.querySelectorAll("Body");
+                                let instance = new Mark(context);
+                                instance.unmark(userInput);
+                                instance.mark(userInput);
+                            }
                         </script>
                     </form>
                 </div>
@@ -62,6 +62,7 @@
         <main class="container">
             <section class="section-seperator">
                 <img src="img/compiler.png" alt="Compiler Prinzip" width="1080px">
+                <small>Bildquelle: https://www.codecademy.com/articles/cpp-compile-execute-locally</small>
             </section>
 
             <hr>
@@ -89,6 +90,7 @@
             <hr>
 
             <section class="section-seperator">
+                <h4 class="h4">Wie funktioniert ein Compiler?</h4>
                 <video controls width="1080px">
                     <source src="img/compiler.mp4" type="video/mp4">
                 </video>
@@ -98,6 +100,7 @@
             <hr>
 
             <section class="section-seperator">
+                <div id="interpreter"></div>
                 <h4 class="h4">Der Unterschied von Compiler und Interpreter</h4>
                 <p class="text">Programmiersprachen sind so aufgebaut, dass Menschen sie relativ mühelos lesen und anwenden können. Damit ein Prozessor
                     die einzelnen Anweisungen eines Programms verstehen kann, muss der Quellcode jedoch erst in eine für die Maschine verständliche

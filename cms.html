@@ -12,9 +12,8 @@
     <body>
         <header class="p-3 bg-dark text-white">
             <nav class="container">
-                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-
-                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <div class="d-flex">
+                    <ul class="nav col-lg-auto">
                         <li><a href="index.html" class="nav-link px-2 text-primary">Log7-Consulting</a></li>
                         <li><a href="glossar.html" class="nav-link px-2 text-white">Glossar</a></li>
                         <li><a href="logistik.html" class="nav-link px-2 text-white">Logistik</a></li>
@@ -22,9 +21,9 @@
                         <li><a href="it.html" class="nav-link px-2 text-white">IT</a></li>
                     </ul>
 
-                    <form class="form-inline my-2 my-lg-0">
-                        <input id="searchText" class="form-control mr-sm-2" type="text" placeholder="Suchen..." aria-label="Search">
-                        <input class="btn btn-primary my-2 my-sm-0" type="button" id="SearchBtn" value="Suchen" onclick="search()" />
+                    <form class="form-inline">
+                        <input id="searchText" class="form-control mr-sm-2" type="text" placeholder="Suchen...">
+                        <input class="btn btn-primary" type="button" id="SearchBtn" value="Suchen" onclick="search()" />
                         <script>
                             function search()
                             {
@@ -42,12 +41,42 @@
 
         <div class="jumbotron">
             <section class="container">
-                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <nav>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Startseite</a></li>
                         <li class="breadcrumb-item"><a href="glossar.html">Glossar</a></li>
                         <li class="breadcrumb-item active text" aria-current="page">CMS - Content Management System</li>
                     </ol>
+                    <small>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="glossar.html#A">A</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#B">B</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">C</li>
+                            <li class="breadcrumb-item"><a href="glossar.html#D">D</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#E">E</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#F">F</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#G">G</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#H">H</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#I">I</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#J">J</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#K">K</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#L">L</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#M">M</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#N">N</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#O">O</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#P">P</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#Q">Q</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#R">R</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#S">S</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#T">T</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#U">U</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#V">V</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#W">W</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#X">X</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#Y">Y</a></li>
+                            <li class="breadcrumb-item"><a href="glossar.html#Z">Z</a></li>
+                        </ol>
+                    </small>
                 </nav>
                 <h1 class="display-3 text-nowrap" id="title">CMS - Content Management System</h1>
                 <p class="lead mt-4">Ein Content Management System (kurz CMS) ist eine Software, die zur Erstellung und Verwaltung von
@@ -61,7 +90,7 @@
 
         <main class="container">
             <section class="section-seperator">
-                <img src="img/cms.png" alt="CMS Prinzip" width="1080px">
+                <img class="img-fluid img-thumbnail" src="img/cms.png" alt="CMS Prinzip">
                 <p class="text mt-4">Um die Verwaltung von Inhalten zu vereinfachen, greifen Anwender häufig auf Content Management Systeme zurück. Verlage oder Redaktionen
                     verwenden gelegentlich Systeme, die nicht über das Internet bereitgestellt, sondern über ein eigenes internes Netzwerk betrieben werden.
                     Meist bezieht sich der Begriff CMS jedoch auf internetbasierte Software mit Datenbankanbindung zum Betreiben einer Website. Die Systeme
@@ -148,15 +177,6 @@
             </footer>
         </main>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-                crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-                crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-                crossorigin="anonymous"></script>
         <script src="datetime.js"></script>
         <script src="mark.js"></script>
         <script src="top.js"></script><script src="top.js"></script>

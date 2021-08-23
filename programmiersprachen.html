@@ -12,9 +12,9 @@
 <body>
 <header class="p-3 bg-dark text-white">
     <nav class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <div class="d-flex">
 
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <ul class="nav col-lg-auto">
                 <li><a href="index.html" class="nav-link px-2 text-primary">Log7-Consulting</a></li>
                 <li><a href="glossar.html" class="nav-link px-2 text-white">Glossar</a></li>
                 <li><a href="logistik.html" class="nav-link px-2 text-white">Logistik</a></li>
@@ -22,9 +22,9 @@
                 <li><a href="it.html" class="nav-link px-2 text-white">IT</a></li>
             </ul>
 
-            <form class="form-inline my-2 my-lg-0">
-                <input id="searchText" class="form-control mr-sm-2" type="text" placeholder="Suchen..." aria-label="Search">
-                <input class="btn btn-primary my-2 my-sm-0" type="button" id="SearchBtn" value="Suchen" onclick="search()" />
+            <form class="form-inline">
+                <input id="searchText" class="form-control mr-sm-2" type="text" placeholder="Suchen...">
+                <input class="btn btn-primary" type="button" id="SearchBtn" value="Suchen" onclick="search()" />
                 <script>
                     function search()
                     {
@@ -42,7 +42,7 @@
 
 <div class="jumbotron">
     <section class="container">
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Startseite</a></li>
                 <li class="breadcrumb-item"><a href="glossar.html">Glossar</a></li>

@@ -19,3 +19,7 @@
 #topButton:hover {
     background-color: #ffffff;
 }
+
+body {
+    font-family: 'Fira Sans', serif;
+}

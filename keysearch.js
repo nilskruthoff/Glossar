@@ -89,14 +89,10 @@ let searchIndex = {
     title: 'Startseite',
     url: 'ide.html',
     keywords: [
-        'CMS',
-        'Vorteile',
-        'Funktionsweise',
-        'WYSIWYG',
-        'WYSIWYG-Editor',
-        'Open Source',
-        'Benutzerrechte',
-        'Module'
+        'Schnellzugriff',
+        'Compiler',
+        'IDE',
+        'PHP'
     ]
 };
 
@@ -118,14 +114,11 @@ let searchIt = {
     title: 'It',
     url: 'it.html',
     keywords: [
-        'CMS',
-        'Vorteile',
-        'Funktionsweise',
-        'WYSIWYG',
-        'WYSIWYG-Editor',
-        'Open Source',
-        'Benutzerrechte',
-        'Module'
+        'Compiler',
+        'Content Management System',
+        'Programmiersprachen',
+        'PHP',
+        'IDE'
     ]
 };
 
@@ -133,14 +126,7 @@ let searchLogistik = {
     title: 'Logistik',
     url: 'logistik.html',
     keywords: [
-        'CMS',
-        'Vorteile',
-        'Funktionsweise',
-        'WYSIWYG',
-        'WYSIWYG-Editor',
-        'Open Source',
-        'Benutzerrechte',
-        'Module'
+        'Logistik',
     ]
 };
 
@@ -149,13 +135,6 @@ let searchMarketing = {
     url: 'marketing.html',
     keywords: [
         'CMS',
-        'Vorteile',
-        'Funktionsweise',
-        'WYSIWYG',
-        'WYSIWYG-Editor',
-        'Open Source',
-        'Benutzerrechte',
-        'Module'
     ]
 };
 
@@ -163,10 +142,10 @@ let searchGlossar = {
     title: 'Glossar',
     url: 'glossar.html',
     keywords: [
-        'CMS',
         'Compiler',
-        'IDE',
+        'Content Management System',
+        'Programmiersprachen',
         'PHP',
-        'Programmiersprachen'
+        'IDE'
     ]
 };
